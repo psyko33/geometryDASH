@@ -17,7 +17,7 @@ public class CubeController: MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity = new Vector3(0, rb.velocity.y, speed);
+        rb.velocity = new Vector3(0, rb.velocity.y, -speed);
 
         if ( Input.GetKeyDown(KeyCode.Space) && canJump) 
             {
