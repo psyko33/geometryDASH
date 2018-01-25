@@ -197,22 +197,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
---- !u!1 &213185301 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1219857379549994, guid: 90d1ed116d91a1e43b8c5dad8787d548,
-    type: 2}
-  m_PrefabInternal: {fileID: 622164075}
---- !u!114 &213185302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 213185301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6894545a0f70a0e40a8234fe329fab5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &622164075
 Prefab:
   m_ObjectHideFlags: 0
@@ -255,11 +239,6 @@ Prefab:
     - target: {fileID: 1219857379549994, guid: 90d1ed116d91a1e43b8c5dad8787d548, type: 2}
       propertyPath: m_Name
       value: PiquePrefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 65684563977547992, guid: 90d1ed116d91a1e43b8c5dad8787d548,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90d1ed116d91a1e43b8c5dad8787d548, type: 2}
@@ -436,11 +415,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4331452751740900, guid: 31a2cdad0803ce342af5701ff7bfc3f5, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.385
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 4331452751740900, guid: 31a2cdad0803ce342af5701ff7bfc3f5, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 9.58
+      value: -2.84
       objectReference: {fileID: 0}
     - target: {fileID: 4331452751740900, guid: 31a2cdad0803ce342af5701ff7bfc3f5, type: 2}
       propertyPath: m_LocalRotation.x
