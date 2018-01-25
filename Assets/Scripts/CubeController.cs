@@ -7,7 +7,8 @@ public class CubeController: MonoBehaviour {
     private Rigidbody rb;
     public float speed = 0 ;
     public float jump = 0;
-    private bool canJump = true;
+    private bool canJump = false;
+    private bool isGrounded = true;
    
 	// Use this for initialization
 	void Start () {
@@ -19,19 +20,25 @@ public class CubeController: MonoBehaviour {
     {
         rb.velocity = new Vector3(0, rb.velocity.y, -speed);
 
-        if ( Input.GetKeyDown(KeyCode.Space) && canJump) 
-            {
+        if (canJump )
+        {
+            rb.AddForce(transform.up * jump, ForceMode.Impulse);
             canJump = false;
-              rb.AddForce(transform.up * jump, ForceMode.Impulse);
-            }
-
+            isGrounded = false;
+        }
     }
-
+    private void Update ()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)&& isGrounded)
+        {
+                canJump = true;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("sol"))
             {
-            canJump = true;
+            isGrounded = true;
             }
     }
 }
