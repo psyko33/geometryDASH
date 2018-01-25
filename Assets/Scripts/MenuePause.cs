@@ -1,21 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuePause : MonoBehaviour {
 
-    public GameObject menuePause; 
-	// Use this for initialization
-	void Start () {
+    public GameObject menuePause;
+    public Button Pause;
+    public GameObject MenuFin;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        MenuePauseActive();
-        MenuePauseNotActive();
+        
 	}
     public void MenuePauseActive ()
     {
@@ -26,5 +28,14 @@ public class MenuePause : MonoBehaviour {
     {
         menuePause.SetActive(false);
         Time.timeScale = 1;
+    }
+    public void LoadSceneQuentin ()
+    {
+        SceneManager.LoadScene("Quentin");
+    }
+    public void CanvasEnd()
+    {
+        MenuFin.SetActive(true);
+        Pause.interactable = false;
     }
 }
