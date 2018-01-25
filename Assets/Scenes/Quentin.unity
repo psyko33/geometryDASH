@@ -205,20 +205,15 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114859562585008436, guid: 65b498d312da38f418da021a5b242dd7,
+    - target: {fileID: 114111170955663388, guid: 65b498d312da38f418da021a5b242dd7,
         type: 2}
-      propertyPath: m_Color.g
-      value: 1
+      propertyPath: m_FontData.m_FontSize
+      value: 21
       objectReference: {fileID: 0}
-    - target: {fileID: 114859562585008436, guid: 65b498d312da38f418da021a5b242dd7,
+    - target: {fileID: 114111170955663388, guid: 65b498d312da38f418da021a5b242dd7,
         type: 2}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114859562585008436, guid: 65b498d312da38f418da021a5b242dd7,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 1
+      propertyPath: m_FontData.m_MaxSize
+      value: 186
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65b498d312da38f418da021a5b242dd7, type: 2}
