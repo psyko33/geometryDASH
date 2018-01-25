@@ -19,7 +19,7 @@ public class CubeController: MonoBehaviour {
     {
         rb.velocity = new Vector3(0, rb.velocity.y, -speed);
 
-        if ( Input.GetKeyDown(KeyCode.Space) && canJump = true) 
+        if ( Input.GetKeyDown(KeyCode.Space) ) 
             {
             canJump = false;
               rb.AddForce(transform.up * jump, ForceMode.Impulse);
